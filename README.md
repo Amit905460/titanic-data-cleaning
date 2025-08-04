@@ -70,6 +70,24 @@ To clean and preprocess raw data to make it suitable for Machine Learning models
 
 ---
 
+## 🌐 View on NBViewer (Recommended)
+> 📌 **Note:** GitHub may not render all visual outputs (like HTML tables or plots) properly.
+> 👉 For full output display, open the notebook on NBViewer:
+
+🔗 [View Notebook on NBViewer](https://nbviewer.org/github/Amit905460/titanic-data-cleaning/blob/main/Data%20Cleaning%20%26%20Preprocessing.ipynb)
+
+---
+
+## 🛠 Trust Notebook in Jupyter (If needed)
+If you see the message:
+> “In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook...”
+
+Do this:
+1. In Jupyter, click `File` → `Trust Notebook`, or click the blue bar saying “Not Trusted”.
+2. Then run the notebook: `Kernel` → `Restart & Run All`.
+
+---
+
 ## 🔗 Submission
 - Task completed for AI & ML Internship.
 - GitHub Repository: [https://github.com/Amit905460/titanic-data-cleaning](https://github.com/Amit905460/titanic-data-cleaning)
