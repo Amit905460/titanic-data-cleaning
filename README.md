@@ -1,57 +1,75 @@
-# 🧮 CLI Calculator - Python 3
+# 🚢 Titanic Dataset - Data Cleaning & Preprocessing
 
-Welcome to **CLI Calculator 3000**, a fun and interactive command-line calculator built with Python 3!  
-It supports basic operations like addition, subtraction, multiplication, and division — all wrapped in a user-friendly emoji interface.
+## 🧠 AI & ML Internship Task 1
 
----
-
-## 🚀 Features
-
-- ➕ **Addition**
-- ➖ **Subtraction**
-- ✖️ **Multiplication**
-- ➗ **Division** (with divide-by-zero protection)
-- 🔁 **Loop-based operation** — keeps running until you exit
-- 🎨 **Emoji-based UI** — makes the terminal more fun
-- ⚠️ **Input validation** — prevents crashes on invalid inputs
+### 📌 Objective:
+To clean and preprocess raw data to make it suitable for Machine Learning models.
 
 ---
 
-## 🛠️ Tech Stack
-
-- **Language**: Python 3  
-- **Tools**: Any text editor (VS Code, PyCharm), Terminal/Command Prompt
+## 📁 Dataset
+- **Source:** [Kaggle Titanic Dataset](https://www.kaggle.com/datasets/yasserh/titanic-dataset)
+- **Files Used:** `titanic.csv`
 
 ---
 
-## 🖥️ How to Run
+## 🛠 Tools & Libraries Used:
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
 
-1. Clone the repository or download the `calculator.py` file.
-2. Open terminal/command prompt.
-3. Run the calculator:
+---
 
-```bash
-python calculator.py
+## 🔍 Steps Performed:
 
+### 1. Data Loading & Exploration
+- Loaded the Titanic dataset using Pandas.
+- Explored dataset structure with `.info()`, `.describe()`, `.head()`.
 
+### 2. Handling Missing Values
+- Filled missing values in:
+  - `Age` using **mean**
+  - `Embarked` using **mode**
+  - Dropped `Cabin` due to too many missing values.
 
+### 3. Encoding Categorical Features
+- Used **Label Encoding** and **One-Hot Encoding** on `Sex`, `Embarked`, and `Pclass`.
 
-📸 Sample Output
+### 4. Feature Scaling
+- Applied **MinMaxScaler** to normalize numerical features like `Age`, `Fare`.
 
-========================================
-🧮 Welcome to PY CLI Calculator 3000 🧮
-========================================
+### 5. Outlier Detection & Removal
+- Plotted **boxplots** for `Fare` and `Age`.
+- Detected and removed outliers based on visual inspection and IQR method.
 
-Choose your operation:
-    ➕  +  : Addition
-    ➖  -  : Subtraction
-    ✖️  *  : Multiplication
-    ➗  /  : Division
-    ❌  exit : Quit Calculator
+---
 
-👉 Enter operation (+, -, *, /) or 'exit': +
-🔢 Enter first number: 10
-🔢 Enter second number: 5
+## 📊 Visualizations:
+- Correlation Heatmap
+- Boxplots for outlier detection
+- Countplot for survival distribution
 
-✅ Result: 10.0 + 5.0 = 15.0
-----------------------------------------
+---
+
+## 📌 Outcome:
+- Cleaned and preprocessed dataset is now ready for ML model training.
+- Understood key preprocessing techniques like handling nulls, encoding, normalization, and outlier removal.
+
+---
+
+## ▶️ How to Run
+1. Clone the repo:
+   ```
+   git clone https://github.com/Amit905460/titanic-data-cleaning
+   ```
+2. Open the notebook `Data Cleaning & Preprocessing.ipynb` in Jupyter Notebook or VS Code.
+3. Run all cells step by step.
+
+---
+
+## 🔗 Submission
+- Task completed for AI & ML Internship.
+- GitHub Repository: [https://github.com/Amit905460/titanic-data-cleaning](https://github.com/Amit905460/titanic-data-cleaning)
